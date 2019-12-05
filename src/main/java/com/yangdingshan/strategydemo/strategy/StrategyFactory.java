@@ -28,7 +28,7 @@ public class StrategyFactory implements InitializingBean {
     @Autowired
     private PromotionService promotionService;
 
-    private static Map strategyMap = new HashMap<>();
+    private static Map<String, Strategy> strategyMap = new HashMap<>();
 
     @Override
     public void afterPropertiesSet() throws Exception {
@@ -38,7 +38,7 @@ public class StrategyFactory implements InitializingBean {
     }
 
     public Strategy creator(String type){
-        return (Strategy) strategyMap.get(type);
+        return strategyMap.get(type);
     }
 
 }

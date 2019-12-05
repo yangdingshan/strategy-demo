@@ -2,7 +2,6 @@ package com.yangdingshan.strategydemo.service.impl;
 
 import com.yangdingshan.strategydemo.dto.OrderDTO;
 import com.yangdingshan.strategydemo.service.GroupService;
-import com.yangdingshan.strategydemo.strategy.Strategy;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class GroupServiceImpl implements GroupService, Strategy {
+public class GroupServiceImpl implements GroupService {
 
 
     @Override
